@@ -1,3 +1,0 @@
-# Fix zsh complaining about insecure directories
-compaudit | xargs chmod g-w
-

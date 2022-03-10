@@ -1,28 +1,28 @@
-- defaults:
-    link:
-      relink: true
-      create: true
+# - defaults:
+#     link:
+#       relink: true
+#       create: true
 
-- clean: ['~']
+# - clean: ['~']
 
-- shell:
-    - [i3/genconf, "Generating i3 config"]
+# - shell:
+#     - [i3/genconf, "Generating i3 config"]
 
-- link:
-    ~/.Xresources: x/Xresources
-    ~/.config/espanso: espanso
-    ~/.config/fontconfig/fonts.conf: fonts/fonts.conf
-    ~/.config/terminator/config: terminator/config
-    ~/.config/user-dirs.conf: xdg/user-dirs.conf
-    ~/.fonts/FontAwesome.otf: fonts/FontAwesome.otf
-    ~/.fonts/Inconsolata-Regular.ttf: fonts/Inconsolata-Regular.ttf
-    ~/.fonts/NotoColorEmoji.ttf: fonts/NotoColorEmoji.ttf
-    ~/.fonts/SourceCodePro-Regular.ttf: fonts/SourceCodePro-Regular.ttf
-    ~/.i3/config: i3/config
-    ~/.i3blocks.conf: i3/i3blocks.conf
-    ~/.xbindkeysrc: xbindkeys/xbindkeysrc
-    ~/bin/hop: i3/scripts/hop
-    ~/bin/i3_switch_workspace.sh: i3/scripts/i3_switch_workspace.sh
+# - link:
+#     ~/.Xresources: x/Xresources
+#     ~/.config/espanso: espanso
+#     ~/.config/fontconfig/fonts.conf: fonts/fonts.conf
+#     ~/.config/terminator/config: terminator/config
+#     ~/.config/user-dirs.conf: xdg/user-dirs.conf
+#     ~/.fonts/FontAwesome.otf: fonts/FontAwesome.otf
+#     ~/.fonts/Inconsolata-Regular.ttf: fonts/Inconsolata-Regular.ttf
+#     ~/.fonts/NotoColorEmoji.ttf: fonts/NotoColorEmoji.ttf
+#     ~/.fonts/SourceCodePro-Regular.ttf: fonts/SourceCodePro-Regular.ttf
+#     ~/.i3/config: i3/config
+#     ~/.i3blocks.conf: i3/i3blocks.conf
+#     ~/.xbindkeysrc: xbindkeys/xbindkeysrc
+#     ~/bin/hop: i3/scripts/hop
+#     ~/bin/i3_switch_workspace.sh: i3/scripts/i3_switch_workspace.sh
 
-- shell:
-    - ['([ -x "$(command -v fc-cache)" ] && fc-cache -f -v) || echo "no fc-cache command"', "Regenerate font cache."]
+# - shell:
+#     - ['([ -x "$(command -v fc-cache)" ] && fc-cache -f -v) || echo "no fc-cache command"', "Regenerate font cache."]

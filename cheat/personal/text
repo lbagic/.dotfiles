@@ -1,3 +1,0 @@
-# add quotes and commas to args list
-printf '"%b", ' $(echo "--adjust-extension --no-parent --force-directories --span-hosts --convert-links --backup-converted -S --page-requisites --timestamping --restrict-file-names=unix -e robots=off")
-

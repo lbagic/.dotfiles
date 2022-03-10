@@ -1,18 +1,18 @@
-- defaults:
-    link:
-      relink: true
-      create: true
-      force: true
-- clean: ['~']
-- shell:
-    - [skhd/generator.sh, "Generating skhd config"]
+# - defaults:
+#     link:
+#       relink: true
+#       create: true
+#       force: true
+# - clean: ['~']
+# - shell:
+#     - [skhd/generator.sh, "Generating skhd config"]
 
-- link:
-    "~/Library/Application Support/Übersicht/widgets": ubersicht
-    ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
-    ~/.skhdrc: skhd/skhdrc.generated
-    ~/.yabairc: yabai/yabairc
-    ~/Library/Fonts/Inconsolata-Regular.ttf: fonts/Inconsolata-Regular.ttf
-    ~/Library/Fonts/SourceCodePro-Regular.ttf: fonts/SourceCodePro-Regular.ttf
-    ~/Library/Preferences/espanso: espanso
-    ~/bin/lock: bin/osx_lock
+# - link:
+#     "~/Library/Application Support/Übersicht/widgets": ubersicht
+#     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
+#     ~/.skhdrc: skhd/skhdrc.generated
+#     ~/.yabairc: yabai/yabairc
+#     ~/Library/Fonts/Inconsolata-Regular.ttf: fonts/Inconsolata-Regular.ttf
+#     ~/Library/Fonts/SourceCodePro-Regular.ttf: fonts/SourceCodePro-Regular.ttf
+#     ~/Library/Preferences/espanso: espanso
+#     ~/bin/lock: bin/osx_lock

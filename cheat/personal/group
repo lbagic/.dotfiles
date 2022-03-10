@@ -1,3 +1,0 @@
-# Add user geek to sudo
-usermod -a -G sudo geek
-

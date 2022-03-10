@@ -8,29 +8,12 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [mkdir -p ~/.vim/temp_dirs/undodir, Crating vim undo dir]
-  - [bat cache --build, Updating bat syntax cache]
 
-- link:
-    ~/.config/bat: bat
-    ~/.config/htop/htoprc: htop/htoprc
-    ~/.dotfiles/.git/hooks/post-checkout: git/hooks/post-checkout
-    ~/.dotfiles/.git/hooks/post-commit: git/hooks/post-commit
-    ~/.dotfiles/.git/hooks/post-merge: git/hooks/post-merge
-    ~/.gitconfig: git/config
-    ~/.grc: grc
-    ~/.gdbinit: gdb/gdbinit
-    ~/.nanorc: nano/nanorc
-    ~/.taskrc: taskwarrior/taskrc
-    ~/.tmate.conf: tmate/tmate.conf
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.toprc : top/toprc
-    ~/.vim/autoload: vim/autoload
-    ~/.vim/templates: vim/templates
-    ~/.vimrc: vim/vimrc
-    ~/.zshrc: zsh/zshrc
-    ~/.zshenv: zsh/config/paths.zsh # for non interactive commands
-    ~/bin/tm: tmux/tmux-menu
+# - link:
+#     ~/.qqq: zsh/zshrc
+#     ~/.zshenv: zsh/config/paths.zsh # for non interactive commands
 
-- shell:
-  - [printf "\n" | vim +PlugInstall +PlugUpdate +qall, Installing vim plugins]
+- create:
+  - ~/workspace/projects
+  - ~/workspace/temp
+  - ~/workspace/sintezis

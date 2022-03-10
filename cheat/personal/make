@@ -1,2 +1,0 @@
-# List all targets
-awk '/^[a-zA-Z\-\_0-9]+:/' Makefile
