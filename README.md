@@ -1,4 +1,4 @@
-# Ivan's Dotfiles
+# Luka's Dotfiles
 
 >  Your dotfiles will most likely be the longest project you ever work on.
 

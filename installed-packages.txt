@@ -1,0 +1,3 @@
+bat
+fzf
+the_silver_searcher
