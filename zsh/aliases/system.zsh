@@ -10,11 +10,13 @@ else
   colorflag="-G"
 fi
 
-# basic shortcuts shortcuts
+# basic shortcuts
 alias ~~='cd ~'
-alias cds="cd && clear && ls"
-alias cls="clear && ls"
+alias cl="clear"
 alias c="code ."
+alias q="exit"
+alias r="clear; exec zsh -l"
+alias dev="npm run dev"
 
 # create and enter directory
 function mdc() {

@@ -4,8 +4,10 @@ alias g="git"
 alias glog="git log --decorate --oneline --graph --color=always --pretty=format:'%C(auto)%h%C(auto)%d %s %C(cyan)(%aN, %cr)'"
 alias gloga="glog --all"
 alias gp='git push origin HEAD'
-alias gd='git diff'
+alias gd="git diff --compact-summary"
+alias ga="git add ."
 alias gc='git commit'
+alias gcm='git commit -m '
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
@@ -22,15 +24,10 @@ alias gcb='git checkout -b'
 alias -s git="git clone" # this is a suffix alias.
 
 alias gj='open `git config remote.origin.url`'
-# Uses git's autocompletion for inner commands. Assumes an install of git's
-# bash `git-completion` script at $completion
-# completion=/usr/local/etc/bash_completion.d/git-completion.bash
 
-# if test -f $completion
-# then
-#   source $completion
-# fi
-
+greset() {
+  git reset --soft HEAD~${1:-1}
+}
 
 git-branch-del-regex() {
 	git for-each-ref --format="%(refname:short)" refs/heads/$1 | xargs git branch -D

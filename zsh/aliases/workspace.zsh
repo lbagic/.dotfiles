@@ -1,3 +1,5 @@
 alias ws='cd ~/workspace'
+alias temp='cd ~/workspace/temp'
 alias proj='cd ~/workspace/projects'
+alias pkg='cd ~/workspace/packages'
 alias snt='cd ~/workspace/sintezis'
