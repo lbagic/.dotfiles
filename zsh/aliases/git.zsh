@@ -30,13 +30,13 @@ greset() {
 }
 
 git-branch-del-regex() {
-	git for-each-ref --format="%(refname:short)" refs/heads/$1 | xargs git branch -D
+  git for-each-ref --format="%(refname:short)" refs/heads/$1 | xargs git branch -D
 }
 
 cloneall() {
-	for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master `; do
-	   git branch --track ${branch#remotes/origin/} $branch
-	done
+  for branch in $(git branch -a | grep remotes | grep -v HEAD | grep -v master); do
+    git branch --track ${branch#remotes/origin/} $branch
+  done
 }
 
 # Update Git submodule to latest commit on origin
@@ -46,8 +46,8 @@ alias gsur='git submodule update --remote --merge'
 # https://junegunn.kr/2015/03/browsing-git-commits-with-fzf
 function gshow() {
   git log --graph --color=always \
-      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+    --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+    fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
       --bind "ctrl-m:execute:
                 (grep -o '[a-f0-9]\{7\}' | head -1 |
                 xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'

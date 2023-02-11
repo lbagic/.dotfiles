@@ -14,9 +14,18 @@ fi
 alias ~~='cd ~'
 alias cl="clear"
 alias c="code ."
+alias e="open ."
 alias q="exit"
 alias r="clear; exec zsh -l"
 alias dev="npm run dev"
+
+alias chosts="code /private/etc/hosts"
+alias cssh="code ~/.ssh/config"
+alias cgit="code ~/.gitconfig"
+
+function ymd() {
+  date +'%Y-%m-%d'
+}
 
 # create and enter directory
 function mdc() {
