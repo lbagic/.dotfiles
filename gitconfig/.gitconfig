@@ -1,0 +1,9 @@
+[user]
+  email = luka.bagi@gmail.com
+  name = Luka Bagic
+[includeIf "gitdir:~/workspace/elude/"]
+  path = ~/.gitconfig-elude
+[includeIf "gitdir:~/workspace/sintezis/"]
+  path = ~/.gitconfig-sintezis
+[push]
+	autoSetupRemote = true

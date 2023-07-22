@@ -94,13 +94,8 @@ function ram() {
 }
 
 # jump to dotfiles
-function d..(){
+function dotfiles(){
   cd ~/.dotfiles
-}
-
-# jump to dotfiles/zsh
-function dz..(){
-  cd ~/.dotfiles/zsh
 }
 
 # edit SSH config

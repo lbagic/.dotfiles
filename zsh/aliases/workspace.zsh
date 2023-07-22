@@ -1,7 +1,2 @@
 alias ws='cd ~/workspace'
-alias personal='cd ~/workspace/personal'
-alias sintezis='cd ~/workspace/sintezis'
-alias elude='cd ~/workspace/elude'
-alias stack='cd ~/workspace/sintezis/stack-client-js'
-alias reti='cd ~/workspace/sintezis/reti'
-alias wow='cd /Applications/World\ of\ Warcraft/_classic_/'
+alias scaffold='npx @lbagic/scaffold@latest'
