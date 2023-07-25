@@ -5,5 +5,7 @@
   path = ~/.gitconfig-elude
 [includeIf "gitdir:~/workspace/sintezis/"]
   path = ~/.gitconfig-sintezis
+[includeIf "gitdir:~/workspace/coreline"]
+  path = ~/.gitconfig-coreline
 [push]
 	autoSetupRemote = true

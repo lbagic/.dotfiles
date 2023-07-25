@@ -4,16 +4,18 @@
       create: true
       force: true # We are opinionated.
 
-- clean: ['~']
+- clean: ["~"]
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     ~/.zshrc: zsh/zshrc
-#     ~/.zshenv: zsh/config/paths.zsh # for non interactive commands
+    ~/:
+      glob: True
+      path: gitconfig/*
+      prefix: "."
 
 - create:
-  - ~/workspace/projects
-  - ~/workspace/temp
-  - ~/workspace/sintezis
+    - ~/workspace/personal
+    - ~/workspace/coreline

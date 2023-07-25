@@ -11,7 +11,7 @@ else
 fi
 
 # basic shortcuts
-alias ~~='cd ~'
+alias ~~="cd ~"
 alias cl="clear"
 alias c="code ."
 alias e="open ."
@@ -22,6 +22,9 @@ alias dev="npm run dev"
 alias chosts="code /private/etc/hosts"
 alias cssh="code ~/.ssh/config"
 alias cgit="code ~/.gitconfig"
+
+alias dotfiles="code ~/.dotfiles"
+alias dotinstall="~/.dotfiles/install"
 
 function ymd() {
   date +'%Y-%m-%d'
@@ -92,18 +95,6 @@ function ram() {
         fi
     fi
 }
-
-# jump to dotfiles
-function dotfiles(){
-  cd ~/.dotfiles
-}
-
-# edit SSH config
-function essh(){
-  vim ~/.ssh/config
-}
-
-alias dotinstall='~/.dotfiles/install'
 
 
 # checks for existence of binary

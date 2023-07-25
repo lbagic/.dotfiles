@@ -1,0 +1,6 @@
+[user]
+	email = luka.bagi@gmail.com
+[github]
+  user = lbagic
+[core]
+  sshCommand = ssh -i ~/.ssh/codilas

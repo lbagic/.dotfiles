@@ -3,28 +3,28 @@ alias g="git"
 # https://git-scm.com/docs/pretty-formats - reference on --format flag.
 alias glog="git log --decorate --oneline --graph --color=always --pretty=format:'%C(auto)%h%C(auto)%d %s %C(cyan)(%aN, %cr)'"
 alias gloga="glog --all"
-alias gp='git push origin HEAD'
+alias gp="git push origin HEAD"
 alias gd="git diff --compact-summary"
 alias ga="git add ."
-alias gc='git commit'
-alias gcm='git commit -m '
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gc="git commit"
+alias gcm="git commit -m "
+alias gca="git commit -a"
+alias gco="git checkout"
+alias gb="git branch"
+alias gs="git status -sb" # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias gac='git add -A; git commit'
-alias gacm='git add -A; git commit -m '
-alias g-='git checkout -' # quickly switch between branches.
-alias gstash='git stash --include-untracked'
+alias gac="git add -A; git commit"
+alias gacm="git add -A; git commit -m "
+alias g-="git checkout -" # quickly switch between branches.
+alias gstash="git stash --include-untracked"
 
 export forgit_checkout_branch=gcob # move wfxr/forgit 'gco' to 'gcob'
-alias gcb='git checkout -b'
+alias gcb="git checkout -b"
 
 # clone git repos when bare link is pasted into shell
 alias -s git="git clone" # this is a suffix alias.
 
-alias gj='open `git config remote.origin.url`'
+alias gj="open `git config remote.origin.url`"
 
 greset() {
   git reset --soft HEAD~${1:-1}
@@ -39,9 +39,6 @@ cloneall() {
     git branch --track ${branch#remotes/origin/} $branch
   done
 }
-
-# Update Git submodule to latest commit on origin
-alias gsur='git submodule update --remote --merge'
 
 # git commit browser by Junegunn Choi
 # https://junegunn.kr/2015/03/browsing-git-commits-with-fzf

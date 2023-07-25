@@ -24,7 +24,7 @@ if command -v ag > /dev/null; then
   export FZF_DEFAULT_COMMAND='(git ls-tree -r --name-only HEAD || ag --hidden --ignore .git -g "") 2> /dev/null'
 else
   export FZF_DEFAULT_COMMAND='(git ls-tree -r --name-only HEAD || find . -path "*/\.*" -prune -o -type f -print -o -type l -print | sed s/^..//) 2> /dev/null'
-  echo "[FZF Module]: 'ag' not found, falling back to 'find' (no hidden files)"
+  # echo "[FZF Module]: 'ag' not found, falling back to 'find' (no hidden files)"
 fi
 
 # Set FZF fzf-file-widget to use the same options
@@ -38,7 +38,7 @@ export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 [[ $- == *i* ]] && source "$FZF_PREFIX/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
-source "$FZF_PREFIX/fzf/shell/key-bindings.zsh"
+# source "$FZF_PREFIX/fzf/shell/key-bindings.zsh"
 
 # better zz from fasd
 # TODO convert to Z
